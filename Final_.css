@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/litera/bootstrap.min.css" rel="stylesheet"> */
+
+.resumelistheading {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
+    margin-top: 20px;
+}
+
+.header-text {
+    text-align: center;
+    top: 200px;
+}
+
+.header-img img {
+    border-radius: 80%; /* picture circular */
+    max-width: 300px; 
+    height: auto;
+}
+
+.mainbody {
+    top: 300px;
+    left: 20px;
+    max-width: 1215px;
+    bottom: 39px;
+    padding-right: 20px;
+    margin-left: 200px;
+}
+

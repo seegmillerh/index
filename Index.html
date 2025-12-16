@@ -1,0 +1,101 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="../Style/Stylesheet.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="headerbox">
+      <h1 id="top">My Hobby | Baking</h1>
+      <a href="Final_My_Website.html">My baking resume/experience</a>
+    </header>
+
+    <section class="infobox">
+
+      <div class="list-content">
+        <ul>
+          <li><strong>Cookies</strong>
+            <ol>
+              <li>No bake cookies</li>
+              <li>Snickerdoodles</li>
+              <li>Chocolate Chip cookies</li>
+              <li>Gingerbread cookies</li>
+            </ol>
+          </li>
+
+          <li><strong>Cake</strong>
+            <ol>
+              <li>Yellow cake</li>
+              <li>Birthday cake</li>
+              <li>Carrot cake</li>
+              <li>Ice cream cake</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cookie">
+        <img src="../Images/Cookie.jpg" alt="Cookies">
+      </div>
+
+    </section>
+
+    <section class="links">
+
+    
+      <div >
+        <iframe src="https://www.youtube.com/embed/Lbe47AiwmgY?si=uFF_n3hUGBDtKETm"
+          title="YouTube video player" allowfullscreen></iframe>
+      </div>
+
+    
+      <div >
+        <div class='tableauPlaceholder' id='viz1765691611559' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;gc&#47;gcbo&#47;TheGreatCookieBakeOff&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='gcbo&#47;TheGreatCookieBakeOff' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;gc&#47;gcbo&#47;TheGreatCookieBakeOff&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1765691611559');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='600px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+
+    </section>
+
+
+    <section>
+      <h2>🎯 Mini App: Number Guessing Game</h2>
+
+      <div>
+        <p>I'm thinking of a number between 1 and 100</p>
+        <input type="number" id="guess">
+        <button onclick="checkGuess()">Guess</button>
+        <p id="message"></p>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <a href="#top">Back to top</a>
+    </footer>
+
+  </div>
+
+  
+  <script>
+    let secretNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    function checkGuess() {
+      const userGuess = Number(document.getElementById("guess").value);
+      attempts++;
+
+      if (userGuess === secretNumber) {
+        document.getElementById("message").textContent =
+          `🎉 Correct! You got it in ${attempts} tries.`;
+      } else if (userGuess > secretNumber) {
+        document.getElementById("message").textContent = "📉 Too high!";
+      } else {
+        document.getElementById("message").textContent = "📈 Too low!";
+      }
+    }
+  </script>
+
+</body>
+</html>
